@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Ярослав Рукавец] (https://up.htmlacademy.ru/htmlcss/26/user/547161).
-* Наставник: [Кирилл Генералов] (https://htmlacademy.ru/profile/hifull).
+* Студент: [Ярослав Рукавец](https://up.htmlacademy.ru/htmlcss/26/user/547161).
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull).
 
 ---
 
