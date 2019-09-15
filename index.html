@@ -6,13 +6,23 @@
   </head>
   <body>
     <header>
-      <a>
+      <a href="#" aria-label="Логотип магазина 'Device'">
         <img src="img/device.png" width="163" height="35" alt="Логотип магазина 'Device'">
       </a>
       <nav>
         <img src="img/svg/plus.svg" width="16" height="16" alt="Развернуть">
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="catalog.html">
+            Каталог товаров
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Экшн-камеры</a>x</li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </a></li>
           <li><a href="#"></a>Доставка</li>
           <li><a href="#"></a>Гарантия</li>
           <li><a href="#"></a>Контакты</li>
@@ -22,7 +32,9 @@
         <img src="img/svg/user.svg" width="13" height="12" alt="Пользователь">
         <ul>
           <li>
-            <button type="button">Войти</button>
+            <a href="#">
+              Войти
+            </a>
           </li>
         </ul>
         <a href="#">
@@ -34,15 +46,15 @@
           Корзина
         </a>
       </div>
-      <form action="#" method="get">
+      <form action="#">
         <label>
           <img src="img/svg/search.svg" width="16" height="16" alt="Поиск">
-          <input type="text" name="search">
+          <input name="search">
         </label>
       </form>
     </header>
     <main>
-      <h1>Магазин "Device"</h1>
+      <h1 class="visually-hidden">Магазин "Device"</h1>
       <section>
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -63,14 +75,36 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.
         </p>
-        <a>
+        <a href="#" aria-label="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
           <img src="img/map.png" width="560" height="222" alt="Карта расположения">
         </a>
-        <a href="">Напишите нам</a>
+        <section class="pop-up-map">
+          <img src="img/map-big.jpg" width="960" height="559" alt="Увеличенная карта расположения">
+          <button type="button" value="Закрыть"></button>
+        </section>
+        <a href="#">Напишите нам</a>
+        <section class="pop-up-form">
+          <form action="#" method="post">
+            <label>
+              Ваше имя:
+              <input placeholder="Имя Фамилия" name="user-name">
+            </label>
+            <label>
+              Ваш e-mail:
+              <input type="email" placeholder="email@example.com" name="email">
+            </label>
+            <label>
+              Текст письма:
+              <textarea placeholder="В свободной форме" name="user-letter"></textarea>
+            </label>
+            <button>Отправить</button>
+            <button type="button" value="Закрыть"></button>
+          </form>
+        </section>
       </section>
     </main>
     <footer>
-      <a>
+      <a href="#" aria-label="Логотип магазина 'Device'">
         <img src="img/device.png" width="163" height="35" alt="Логотип магазина 'Device'">
       </a>
       <p>г. Москва, ул. Строителей, 15</p>
@@ -86,7 +120,9 @@
         <img src="img/svg/user.svg" width="13" height="12" alt="Пользователь">
         <ul>
           <li>
-            <button type="button">Войти</button>
+            <a href="#">
+              Войти
+            </a>
           </li>
         </ul>
         <a href="#">
@@ -100,16 +136,13 @@
       </div>
       <div>
         <a href="#">
-          <img src="img/svg/fb.svg" width="32" height="32" alt="Фейсбук">
-          Фейсбук
+          <img src="img/svg/fb.svg" width="32" height="32" alt="Фейсбук" aria-label="Device в Фейсбук">
         </a>
         <a href="#">
-          <img src="img/svg/instagram.svg" width="32" height="32" alt="Инстаграм">
-          Инстаграм
+          <img src="img/svg/instagram.svg" width="32" height="32" alt="Инстаграм" aria-label="Device в Инстаграм">
         </a>
         <a href="#">
-          <img src="img/svg/twitter.svg" width="32" height="32" alt="Твиттер">
-          Твиттер
+          <img src="img/svg/twitter.svg" width="32" height="32" alt="Твиттер" aria-label="Device в Твиттере">
         </a>
       </div>
       <div>
