@@ -12,17 +12,19 @@
       <nav>
         <img src="img/svg/plus.svg" width="16" height="16" alt="Развернуть">
         <ul>
-          <li><a href="catalog.html">
+          <li>
+            <a href="catalog.html">
             Каталог товаров
-            <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Экшн-камеры</a>x</li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </a></li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Экшн-камеры</a>x</li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </a>
+          </li>
           <li><a href="#"></a>Доставка</li>
           <li><a href="#"></a>Гарантия</li>
           <li><a href="#"></a>Контакты</li>
@@ -43,10 +45,10 @@
           Корзина
         </a>
       </div>
-      <form action="#">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <label>
           <img src="img/svg/search.svg" width="16" height="16" alt="Поиск">
-          <input name="search">
+          <input name="search" placeholder="Поиск по сайту">
         </label>
       </form>
     </header>
@@ -62,39 +64,39 @@
         <p>Цвет</p>
         <form>
           <label>
-            <input type="radio">
+            <input type="radio" name="black">
             Черный
           </label>
           <label>
-            <input type="radio">
+            <input type="radio" name="white">
             Белый
           </label>
           <label>
-            <input type="radio">
+            <input type="radio" name="blue">
             Синий
           </label>
           <label>
-            <input type="radio">
+            <input type="radio" name="red">
             Красный
           </label>
           <label>
-            <input type="radio">
+            <input type="radio" name="pink">
             Розовый
           </label>
         </form>
         <p>Bluetooth</p>
         <form>
           <label>
-            <input type="radio">
+            <input type="radio" name="available">
             Есть
           </label>
           <label>
-            <input type="radio">
+            <input type="radio" name="unavailable">
             Нет
           </label>
         </form>
         <form>
-          <input type="submit" value="Показать">
+          <input type="submit" value="Показать" name="show">
         </form>
       </section>
       <section>

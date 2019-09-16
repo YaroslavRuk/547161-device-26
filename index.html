@@ -12,17 +12,19 @@
       <nav>
         <img src="img/svg/plus.svg" width="16" height="16" alt="Развернуть">
         <ul>
-          <li><a href="catalog.html">
+          <li>
+            <a href="catalog.html">
             Каталог товаров
-            <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Экшн-камеры</a>x</li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </a></li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Экшн-камеры</a>x</li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </a>
+          </li>
           <li><a href="#"></a>Доставка</li>
           <li><a href="#"></a>Гарантия</li>
           <li><a href="#"></a>Контакты</li>
@@ -32,9 +34,7 @@
         <img src="img/svg/user.svg" width="13" height="12" alt="Пользователь">
         <ul>
           <li>
-            <a href="#">
-              Войти
-            </a>
+            <a href="#">Войти</a>
           </li>
         </ul>
         <a href="#">
@@ -46,10 +46,10 @@
           Корзина
         </a>
       </div>
-      <form action="#">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <label>
           <img src="img/svg/search.svg" width="16" height="16" alt="Поиск">
-          <input name="search">
+          <input name="search" placeholder="Поиск по сайту">
         </label>
       </form>
     </header>
@@ -76,12 +76,13 @@
           Всякое бывает.
         </p>
         <a href="#" aria-label="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
-          <img src="img/map.png" width="560" height="222" alt="Карта расположения">
+          <img src="img/map.png" width="560" height="222" alt="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
         </a>
-        <section class="pop-up-map">
-          <img src="img/map-big.jpg" width="960" height="559" alt="Увеличенная карта расположения">
-          <button type="button" value="Закрыть"></button>
-        </section>
+        <div class="pop-up-map">
+          <img src="img/map-big.jpg" width="960" height="559"
+               alt="Увеличенная карта расположения. Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
+          <button type="button" aria-label="Закрыть"></button>
+        </div>
         <a href="#">Напишите нам</a>
         <section class="pop-up-form">
           <form action="#" method="post">
@@ -97,8 +98,8 @@
               Текст письма:
               <textarea placeholder="В свободной форме" name="user-letter"></textarea>
             </label>
-            <button>Отправить</button>
-            <button type="button" value="Закрыть"></button>
+            <button type="submit">Отправить</button>
+            <button type="button" aria-label="Закрыть"></button>
           </form>
         </section>
       </section>
@@ -120,9 +121,7 @@
         <img src="img/svg/user.svg" width="13" height="12" alt="Пользователь">
         <ul>
           <li>
-            <a href="#">
-              Войти
-            </a>
+            <a href="#">Войти</a>
           </li>
         </ul>
         <a href="#">
