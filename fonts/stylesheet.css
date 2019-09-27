@@ -1,10 +1,7 @@
 @font-face {
     font-family: 'Gilroy ExtraBold';
-    src: url('Gilroy-ExtraBold.eot');
     src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-ExtraBold.woff') format('woff'),
-        url('Gilroy-ExtraBold.ttf') format('truetype');
+        url('Gilroy-ExtraBold.woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -12,11 +9,17 @@
 
 @font-face {
     font-family: 'Gilroy Light';
-    src: url('Gilroy-Light.eot');
     src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Light.woff') format('woff'),
-        url('Gilroy-Light.ttf') format('truetype');
+        url('Gilroy-Light.woff');
     font-weight: 300;
     font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/open-sans-v17-cyrillic-300.woff2') format('woff2'),
+  url('../fonts/open-sans-v17-cyrillic-300.woff') format('woff');
 }
