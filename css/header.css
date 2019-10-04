@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  color: #000;
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.main-wrapper {
+  width: 1360px;
+  margin: 0 auto;
+  margin-top: 40px;
+  /*background-color: lightgrey;*/
+}
+/*==================================================Header===================================================*/
+.main-header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+  min-height: 299px;
+  opacity: 0.5;
+  background-color: #f0c52e;
+}
+
+.main-header-logo {
+  width: 100%;
+  position: relative;
+  bottom: 18px;
+  left: 59px;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search {
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+.header-search img {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.header-search input {
+  width: 115px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  margin-left: 13px;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px;
+}
+
+.user-navigation :first-child {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.user-enter-button {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 79px;
+  bottom: 3px;
+}
+
+.user-navigation :nth-child(3) {
+  position: relative;
+  top: 3px;
+  left: 35px;
+}
+
+.compare-icon {
+
+}
+
+.user-navigation :nth-child(4) {
+  position: relative;
+  right: 20px;
+}
+
+.basket-icon {
+  margin-right: 10px
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 22px;
+  margin-left: 19px;
+}
+
+.site-navigation img {
+  position: absolute;
+  left: 271px;
+  top: 19px;
+}
+
+.contacts-delivery-information-header ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  min-width: 560px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.contacts-delivery-information-header ul li:nth-child(2){
+  position: relative;
+  right: 65px;
+ }
+
+.contacts-delivery-information-header ul li:nth-child(3){
+  position: relative;
+  right: 56px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
