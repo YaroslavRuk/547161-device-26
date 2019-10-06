@@ -13,64 +13,63 @@
         <a href="#" aria-label="Логотип магазина 'Device'" class="main-header-logo">
           <img src="img/device.png" width="163" height="35" alt="Логотип магазина 'Device'">
         </a>
-        <nav class="site-navigation">
-          <img src="img/svg/plus.svg" width="16" height="16" alt="Развернуть">
-          <ul class="site-navigation-items">
-            <li>
-              <a href="catalog.html">
-                Каталог товаров
-                <ul>
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <section class="contacts-delivery-information-header">
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </section>
-        <div class="user-navigation">
-          <img src="img/svg/user.svg" width="13" height="12" alt="Пользователь">
-          <ul>
-            <li>
-              <a href="#">Войти</a>
-            </li>
-          </ul>
-          <a href="#">
-            <img src="img/svg/compare.svg" width="10" height="10" alt="Сравнить">
-            Сравнить
-          </a>
-          <a href="#">
-            <img src="img/svg/cart.svg" width="12" height="12" alt="Корзина">
-            Корзина
-          </a>
+        <div class="container-1">
+          <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
+            <label>
+              <input name="search" placeholder="Поиск по сайту">
+            </label>
+          </form>
+          <div class="user-navigation">
+            <ul class="user-enter-button">
+              <li>
+                <a href="#">Войти</a>
+              </li>
+            </ul>
+            <a href="#">Сравнить</a>
+            <a href="#">Корзина</a>
+          </div>
         </div>
-        <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
-          <label>
-            <img src="img/svg/search.svg" width="16" height="16" alt="Поиск">
-            <input name="search" placeholder="Поиск по сайту">
-          </label>
-        </form>
+        <div class="container-2">
+          <nav class="site-navigation">
+            <ul class="site-navigation-items">
+              <li>
+                <a href="catalog.html" class="catalog-link">
+                  Каталог товаров
+                  <ul class="visually-hidden">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшн-камеры</a></li>
+                    <li><a href="#">Фитнес-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+            <img src="img/svg/plus.svg" width="16" height="16" alt="Развернуть">
+          </nav>
+          <section class="contacts-delivery-information-header">
+            <ul>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </section>
+        </div>
       </header>
       <main class="main-content">
         <h1 class="visually-hidden">Магазин "Device"</h1>
         <article class="stiller-stick">
-          <div>
+          <div class="stiller-stick-img-container">
             <img src="img/slider-1.png" alt="Самая длинная селфи палка">
           </div>
           <div class="stiller-stick-description">
-            <p>Делай селфи, как Бен Стиллер!</p>
             <p>
-              Самая длинная палка для селфи доступна в нашем магазине.
+              Делай селфи,<br>
+              как Бен Стиллер!
+            </p>
+            <p>
+              Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <span>01</span><!--Скорее всего это будет сделано псевдоэлементом-->
@@ -82,30 +81,30 @@
             </ul>
           </div>
         </article>
-        <nav class="product-icon-block">
+        <nav class="product-icon-container">
           <div class="product-icon">
-            <div>
+            <div class="product-icon-1">
               <img src="img/popular-1.png" alt="Виртуальная реальность" width="97" height="55">
             </div>
-            <div>
+            <div class="product-icon-2">
               <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
             </div>
-            <div>
+            <div class="product-icon-3">
               <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
             </div>
-            <div>
+            <div class="product-icon-4">
               <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
             </div>
-            <div>
+            <div class="product-icon-5">
               <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
             </div>
-            <div>
+            <div class="product-icon-6">
               <img src="img/poppular-6.png" alt="Квадрокоптеры" width="132" height="69">
             </div>
           </div>
           <ul class="product-icon-title">
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Моноподы<br> для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
