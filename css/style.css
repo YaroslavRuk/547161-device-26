@@ -98,7 +98,8 @@ a {
 
 .user-enter-button::before,
 .user-navigation a:nth-child(2)::before,
-.user-navigation a:nth-child(3)::before {
+.user-navigation a:nth-child(3)::before,
+.site-navigation-items::after {
   content: "";
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,7 +149,7 @@ a {
 .container-2 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 146px;
+  padding-bottom: 163px;
 }
 
 .site-navigation {
@@ -165,10 +166,12 @@ a {
   list-style: none;
 }
 
-.site-navigation img {
-  position: absolute;
+.site-navigation-items::after {
+  background-image: url("../img/svg/plus.svg");
+  width: 16px;
+  height: 16px;
+  bottom: 2px;
   left: 230px;
-  top: 2px;
 }
 
 .contacts-delivery-information-header ul {
