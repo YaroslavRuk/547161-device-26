@@ -68,86 +68,96 @@
             <li><a href="#">Моноподы для селфи</a></li>
           </ol>
         </div>
+      </main>
+    </div>
+    <div class="wrapper-catalog-grey">
+      <div class="wrapper-catalog-white">
         <div class="filter-sort-wrapper">
           <section class="filter">
             <h2>Фильтр:</h2>
-            <form>
-              <fieldset>
+            <input type="checkbox" name="black" id="black" class="visually-hidden" checked>
+            <input type="checkbox" name="white" id="white" class="visually-hidden">
+            <input type="checkbox" name="blue" id="blue" class="visually-hidden" checked>
+            <input type="checkbox" name="red" id="red" class="visually-hidden" checked>
+            <input type="checkbox" name="pink" id="pink" class="visually-hidden">
+            <input type="radio" name="bluetooth" value="available" id="bluet-yes" class="visually-hidden" checked>
+            <input type="radio" name="bluetooth" value="unavailable" id="bluet-no" class="visually-hidden">
+            <form class="filter-form">
+              <fieldset class="filter-fieldset-1">
                 <legend class="cost">Стоимость</legend>
                 <label>
                   <input type="range" min="0" max="5000" step="100">
                 </label>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-fieldset-2">
                 <legend class="color">Цвет</legend>
-                <label>
-                  <input type="checkbox" name="black">
-                  Черный
-                </label>
-                <label>
-                  <input type="checkbox" name="white">
-                  Белый
-                </label>
-                <label>
-                  <input type="checkbox" name="blue">
-                  Синий
-                </label>
-                <label>
-                  <input type="checkbox" name="red">
-                  Красный
-                </label>
-                <label>
-                  <input type="checkbox" name="pink">
-                  Розовый
-                </label>
+                <ul class="list-of-colors">
+                  <li>
+                    <label for="black">Черный</label>
+                  </li>
+                  <li>
+                    <label for="white">Белый</label>
+                  </li>
+                  <li>
+                    <label for="blue">Синий</label>
+                  </li>
+                  <li>
+                    <label for="red">Красный</label>
+                  </li>
+                  <li>
+                    <label for="pink">Розовый</label>
+                  </li>
+                </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-fieldset-3">
                 <legend class="bluetooth">Bluetooth</legend>
-                <label>
-                  <input type="radio" name="bluetooth" value="available">
-                  Есть
-                </label>
-                <label>
-                  <input type="radio" name="bluetooth" value="unavailable">
-                  Нет
-                </label>
-                <button type="submit">Показать</button>
+                <ul class="bluetooth-yes-no">
+                  <li>
+                    <label for="bluet-yes">Есть</label>
+                  </li>
+                  <li>
+                    <label for="bluet-no">Нет</label>
+                  </li>
+                </ul>
               </fieldset>
+              <button type="submit" class="button-regular button-regular-3"><span>Показать</span></button>
             </form>
           </section>
           <section class="sort-and-product">
             <div class="sort-bar">
-              <h2>Сортировка</h2>
+              <h2>Сортировка:</h2>
               <ul class="sort-type">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По популярности</a></li>
               </ul>
-              <label>
-                <input type="radio" name="switch" value="ascending">
-                <input type="radio" name="switch" value="descending">
-              </label>
+              <input class="visually-hidden" type="radio" name="switch" value="ascending" id="ascending" checked>
+              <input class="visually-hidden" type="radio" name="switch" value="descending" id="descending" >
+              <div class="sort-buttons">
+                <label for="ascending"></label>
+                <label for="descending"></label>
+              </div>
             </div>
             <ul class="catalog-of-product">
               <li>
                 <img src="img/item-1.jpg" alt="Любительская селфи-палка">
-                Любительская селфи-палка
-                <b>500 руб</b>
+                <p>Любительская селфи-палка</p>
+                <span>500 руб</span>
               </li>
               <li>
                 <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
-                Профессиональная селфи-палка
-                <b>1500 руб</b>
+                <p>Профессиональная<br> селфи-палка</p>
+                <span>1500 руб</span>
               </li>
               <li>
                 <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
-                Непотопляемая селфи-палка
-                <b>2500 руб</b>
+                <p>Непотопляемая селфи-палка</p>
+                <span>2500 руб</span>
               </li>
               <li>
                 <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
-                Селфи-палка «Следуй за мной»
-                <b>4900 руб</b>
+                <p>Селфи-палка «Следуй за<br> мной»</p>
+                <span>4900 руб</span>
               </li>
             </ul>
             <div>
@@ -159,8 +169,10 @@
             </div>
           </section>
         </div>
-      </main>
-      <footer class="main-footer main-footer-catalog">
+      </div>
+    </div>
+    <div class="main-footer-wrapper">
+      <footer class="main-footer main-footer-catalog main-wrapper">
         <div class="container-1-footer">
           <a href="#" aria-label="Логотип магазина 'Device'" class="footer-logo">
             <img src="img/svg/device.svg" width="163" height="35" alt="Логотип магазина 'Device'">
