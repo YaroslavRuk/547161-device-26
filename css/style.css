@@ -419,7 +419,7 @@ a {
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin-right: 17px;
+  margin-right: 21px;
   background-image: url("../img/svg/slider-button-empty.svg");
   cursor: pointer;
 }
@@ -428,8 +428,8 @@ a {
   position: absolute;
   z-index: 20;
   font-size: 0;
-  right: 87px;
-  bottom: 149px;
+  right: 64px;
+  top: 217px;
 }
 
 .slide {
@@ -470,7 +470,7 @@ a {
 }
 
 .quadrocopter {
-  margin-bottom: 175px;
+  margin-bottom: 106px;
 }
 
 .article-slider-wrapper::before {
@@ -540,7 +540,7 @@ a {
 
 .fit-band-description {
   margin-top: -11px;
-  margin-right: 146px;
+  margin-right: 122px;
 }
 
 .quadrocopter-description {
@@ -1568,6 +1568,16 @@ a {
 }
 
 
+.enter-footer:hover::before ~ .user-navigation-footer span,
+.compare-footer:hover::before span,
+.basket-footer:hover::before span {
+  opacity: 1;
+}
+
+
+
+
+
 
 .user-account-links-footer {
   margin-right: 59px;
@@ -1652,12 +1662,13 @@ a {
   z-index: 25;
 }
 .modal-form {
-  top: 45px;
+  top: 50%;
   left: 50%;
   display: none;
   width: 960px;
   height: 553px;
   background-color: #fff;
+  margin-top: -276px;
   margin-left: -480px;
   padding-top: 96px;
   padding-right: 100px;
@@ -1784,7 +1795,7 @@ input:-moz-placeholder {
   display: none;
   width: 960px;
   height: 559px;
-  margin-top: -290px;
+  margin-top: -280px;
   margin-left: -480px;
 }
 .modal-map p {
