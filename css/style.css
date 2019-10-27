@@ -57,7 +57,6 @@ a {
   padding-left: 25px;
   position: relative;
 }
-
 .header-search::before {
   content: "";
   background-image: url("../img/svg/search.svg");
@@ -69,7 +68,6 @@ a {
   bottom: 3px;
   left: 3px;
 }
-
 .header-search input {
   width: 115px;
   height: 15px;
@@ -88,8 +86,6 @@ a {
 .header-search input:focus {
   opacity: 1;
 }
-
-
 .search-button {
   display: none;
   position: absolute;
@@ -139,7 +135,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 .user-navigation a:hover {
   opacity: 0.6;
 }
@@ -149,21 +144,23 @@ a {
 
 .user-account-links {
   margin: 0;
+  margin-right: 238px;
   padding: 0;
   list-style: none;
   display: inline-block;
   position: relative;
-  margin-right: 232px;
 }
 
-.ser-account-links::before,
-.user-account-links-footer::before,
+.enter {
+  position: relative;
+}
+
+
+
+
 .enter::before,
-.enter-footer::before,
 .compare::before,
-.compare-footer::before,
 .basket::before,
-.basket-footer::before,
 .catalog-link::after,
 .main-page-link::after,
 .catalog-page-link::after {
@@ -173,7 +170,6 @@ a {
   position: absolute;
 }
 
-.ser-account-links::before,
 .enter::before {
   background-image: url("../img/svg/user.svg");
   width: 13px;
@@ -182,7 +178,7 @@ a {
   left: -25px;
 }
 
-.ser-account-links-footer::before,
+
 .enter-footer::before {
   background-image: url("../img/svg/user-footer.svg");
   width: 13px;
@@ -378,17 +374,44 @@ a {
 
 /*==================================================Header-Catalog===================================================*/
 
+
+
+
 .user-account-links-catalog {
   margin-right: 79px;
+}
+
+.user-account-links-catalog li:hover {
+  opacity: 0.6;
+}
+
+.user-account-links-catalog li:active {
+  opacity: 0.3;
 }
 
 .user-name {
   display: inline-block;
   margin-right: 13px;
+  position: relative;
 }
+
+.user-name::before {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  background-image: url("../img/svg/user.svg");
+  width: 13px;
+  height: 12px;
+  bottom: 3px;
+  left: -25px;
+}
+
 
 .user-exit {
   display: inline-block;
+  opacity: 0.3;
 }
 
 .container-2-catalog {
@@ -1147,7 +1170,6 @@ a {
 .main-heading-catalog + ol a {
   width: 51px;
   height: 10px;
-  opacity: 0.3;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -1393,34 +1415,24 @@ a {
 
 
 
-
-/*.sort-bar::after {
-  content: "";
-  background-color: #ebebeb;
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-  top: 0;
-  z-index: -1;
-  margin-right: 8vw;
-}*/
-
-
-/*.sort-and-product ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}*/
-
 .sort-type {
   display: flex;
-  opacity: 0.3;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
   margin: 0;
   margin-left: -134px;
   padding: 0;
   list-style: none;
+}
+
+.sort-type a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.sort-type a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.sort-type a:active{
+  color: rgba(0, 0, 0, 1);
 }
 
 .sort-type li {
@@ -1532,8 +1544,6 @@ a {
 .footer-logo img:active {
   opacity: 0.3;
 }
-
-
 .footer-logo::after {
   content: "";
   background-color: #ffc600;
@@ -1544,22 +1554,55 @@ a {
   left: 0;
 }
 
+
 .user-navigation-footer {
   margin-top: 5px;
 }
-
-
-
 .user-navigation-footer span {
   opacity: 0.7;
 }
+
+.user-account-links-footer {
+  margin-right: 63px;
+}
+
+
+
+.enter-footer {
+  position: relative;
+}
+
+.compare-basket-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.compare-basket-links li {
+  display: inline-block;
+}
+
+
+
+.enter-footer::before,
+.compare-footer::before,
+.basket-footer::before {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+
+
 .user-navigation-footer a:hover,
 .user-navigation-footer span:hover {
   opacity: 1;
 }
 .enter-footer:hover::before,
 .compare-footer:hover::before,
-.basket-footer:hover::before{
+.basket-footer:hover::before,
+.user-name-footer:hover::before {
   opacity: 0.6;
 }
 .user-navigation-footer a:active,
@@ -1568,28 +1611,22 @@ a {
 }
 
 
-.enter-footer:hover::before ~ .user-navigation-footer span,
-.compare-footer:hover::before span,
-.basket-footer:hover::before span {
+.user-navigation-footer li:hover span {
   opacity: 1;
 }
 
+/*.user-account-links-footer li:hover {
+  opacity: 1;
+}*/
+
+/*.user-account-links-footer li:active {
+  opacity: 0.3;
+}*/
 
 
 
 
 
-.user-account-links-footer {
-  margin-right: 59px;
-}
-
-.user-account-links-footer a {
-
-}
-
-.container-2-footer {
-
-}
 
 .address {
   display: flex;
@@ -1600,10 +1637,6 @@ a {
   font-size: 15px;
 }
 
-.address p:last-child {
-
-}
-
 .contacts-delivery-information-footer{
   margin-top: -31px;
   margin-bottom: 65px;
@@ -1611,7 +1644,7 @@ a {
 }
 
 .contacts-delivery-information-footer ul li:nth-child(2){
-  margin-right: 34px;
+  margin-right: 31px;
 }
 
 .container-3-footer {
@@ -1649,7 +1682,23 @@ a {
 }
 /*=================================================Footer-Catalog==================================================*/
 
+.user-name-footer {
+  position: relative;
+}
 
+
+.user-name-footer::before {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  background-image: url("../img/svg/user-footer.svg");
+  width: 13px;
+  height: 12px;
+  bottom: 3px;
+  left: -25px;
+}
 
 
 
