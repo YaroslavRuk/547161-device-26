@@ -8,20 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+
+
     <div class="main-wrapper">
       <header class="main-header">
-        <a href="#" aria-label="Логотип магазина 'Device'" class="main-header-logo">
+        <div aria-label="Логотип магазина 'Device'" class="main-header-logo">
           <img src="img/device.png" width="163" height="35" alt="Логотип магазина 'Device'">
-        </a>
+        </div>
         <div class="container-1">
           <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
-            <label>
-              <input name="search" placeholder="Поиск по сайту" class="header-search-input">
-              <button class="search-button"><span>Найти</span></button>
-            </label>
+            <label for="header-search-input"></label>
+            <input name="search" placeholder="Поиск по сайту" class="header-search-input" id="header-search-input">
+            <button class="search-button"><span>Найти</span></button>
           </form>
           <div class="user-navigation">
             <ul class="user-account-links">
@@ -46,12 +45,12 @@
                 <a href="catalog.html" class="catalog-link">Каталог товаров</a>
                 <div class="catalog-link-items-wrapper">
                   <ul class="catalog-link-items">
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Квадрокоптеры</a></li>
-                    <li><a href="#">Моноподы для селфи</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
+                    <li><a href="catalog.html">Виртуальная реальность</a></li>
+                    <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                    <li><a href="catalog.html">Квадрокоптеры</a></li>
+                    <li><a href="catalog.html">Моноподы для селфи</a></li>
+                    <li><a href="catalog.html">Умные часы</a></li>
+                    <li><a href="catalog.html">Экшн-камеры</a></li>
                   </ul>
                 </div>
               </li>
@@ -66,19 +65,25 @@
           </section>
         </div>
       </header>
+
       <main class="main-content">
         <h1 class="visually-hidden">Магазин "Device"</h1>
         <section class="slider">
-          <div class="slider-controls">
-            <label for="product-1">Первый</label>
+          <input class="product-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
+
+          <form class="slider-controls">
+
+            <label class="product-1" for="product-1">Первый</label>
+            <input class="product-2 visually-hidden" type="radio" id="product-2" name="toggle">
             <label for="product-2">Второй</label>
+            <input class="product-3 visually-hidden" type="radio" id="product-3" name="toggle">
             <label for="product-3">Третий</label>
-          </div>
+          </form>
           <ul class="slider-list">
-            <li class="slider-item slide" id="slide1">
+            <li class="slide1 slider-item slide" id="slide1">
               <article class="stiller-stick article-slider-wrapper">
                 <div class="stiller-stick-img-container article-slider-img-container">
-                  <img src="img/slider-1.png" alt="Самая длинная селфи палка">
+                  <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка">
                 </div>
                 <div class="stiller-stick-description article-slider-description">
                   <p>
@@ -109,10 +114,10 @@
                 </div>
               </article>
             </li>
-            <li class="slider-item slide" id="slide2">
+            <li class="slide2 slider-item slide" id="slide2">
               <article class="fit-band article-slider-wrapper">
                 <div class="fit-band-img-container article-slider-img-container">
-                  <img src="img/slider-2.png" alt="Мотивирующие фитнес-браслеты">
+                  <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
                 </div>
                 <div class="fit-band-description article-slider-description">
                   <p>
@@ -135,10 +140,10 @@
                 </div>
               </article>
             </li>
-            <li class="slider-item slide" id="slide3">
+            <li class="slide3 slider-item slide" id="slide3">
               <article class="quadrocopter article-slider-wrapper">
                 <div class="quadrocopter-img-container article-slider-img-container">
-                  <img src="img/slider-3.png" alt="Квадрокоптер с лазером">
+                  <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
                 </div>
                 <div class="quadrocopter-description article-slider-description">
 
@@ -171,7 +176,7 @@
         <nav class="product-icons-container">
           <ul class="product-icons">
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-1 product-icon">
                   <img src="img/popular-1.png" alt="Виртуальная реальность" width="97" height="55">
                 </div>
@@ -179,7 +184,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-2 product-icon">
                   <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
                 </div>
@@ -187,7 +192,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-3 product-icon">
                   <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
                 </div>
@@ -195,7 +200,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-4 product-icon">
                   <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
                 </div>
@@ -203,7 +208,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-5 product-icon">
                   <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
                 </div>
@@ -211,7 +216,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="catalog.html">
                 <div class="product-icon-6 product-icon">
                   <img src="img/poppular-6.png" alt="Квадрокоптеры" width="132" height="69">
                 </div>
@@ -277,21 +282,21 @@
       </div>
     </section>
     <div class="main-wrapper">
-      <main class="main-content">
+      <section class="main-content">
         <section class="our-brands">
           <h2 class="visually-hidden">Производители</h2>
-          <div>
-            <img src="img/logo-1.png" alt="dji" width="260" height="100" class="dji">
-          </div>
-          <div>
-            <img src="img/logo-2.png" alt="sp gadgets" width="260" height="100" class="sp-gadgets">
-          </div>
-          <div>
-            <img src="img/logo-3.png" alt="go pro" width="260" height="100" class="go-pro">
-          </div>
-          <div>
-            <img src="img/logo-4.png" alt="vive" width="260" height="100" class="vive">
-          </div>
+          <a href="#" class="dji">
+            <img src="img/logo-1.jpg" alt="dji" width="260" height="100">
+          </a>
+          <a href="#" class="sp-gadgets">
+            <img src="img/logo-2.jpg" alt="sp gadgets" width="260" height="100">
+          </a>
+          <a href="#" class="go-pro">
+            <img src="img/logo-3.jpg" alt="go pro" width="260" height="100">
+          </a>
+          <a href="#" class="vive">
+            <img src="img/logo-4.jpg" alt="vive" width="260" height="100">
+          </a>
         </section>
         <div class="about-contacts-wrapper">
           <section class="about-us">
@@ -324,7 +329,7 @@
             <a href="#" class="button-regular write-us-button"><span>Напишите нам</span></a>
           </section>
         </div>
-      </main>
+      </section>
     </div>
     <div class="main-footer-wrapper">
       <footer class="main-footer">
@@ -351,7 +356,7 @@
         <div class="container-2-footer">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
-            <p><a href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a></p>
+            <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
           </div>
         </div>
         <div class="contacts-delivery-information-header contacts-delivery-information-footer">
@@ -404,12 +409,8 @@
       </section>
       <div class="modal modal-map"> <!--visually-hidden-->
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.
-        112374947324!2d37.52742931548593!3d55.68703400453056!2m3!1f0!2f0!3f0!3m2!
-        1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!
-        2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!
-        5e0!3m2!1suk!2sua!4v1571933968187!5m2!1suk!2sua"
-                width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947324!2d37.52742931548593!3d55.68703400453056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1571933968187!5m2!1suk!2sua"
+                width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
         <p>
           <img src="img/map-big.jpg" width="960" height="559"
                alt="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
