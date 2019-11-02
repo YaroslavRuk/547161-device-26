@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-
-
     <div class="main-wrapper">
       <header class="main-header">
         <div aria-label="Логотип магазина 'Device'" class="main-header-logo">
@@ -42,7 +39,7 @@
           <nav class="site-navigation">
             <ul class="site-navigation-items">
               <li>
-                <a href="catalog.html" class="catalog-link">Каталог товаров</a>
+                <a href="catalog.html" class="catalog-link"><span>Каталог товаров</span></a>
                 <div class="catalog-link-items-wrapper">
                   <ul class="catalog-link-items">
                     <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -65,18 +62,15 @@
           </section>
         </div>
       </header>
-
       <main class="main-content">
         <h1 class="visually-hidden">Магазин "Device"</h1>
         <section class="slider">
           <input class="product-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
-
+          <input class="product-2 visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="product-3 visually-hidden" type="radio" id="product-3" name="toggle">
           <form class="slider-controls">
-
             <label class="product-1" for="product-1">Первый</label>
-            <input class="product-2 visually-hidden" type="radio" id="product-2" name="toggle">
             <label for="product-2">Второй</label>
-            <input class="product-3 visually-hidden" type="radio" id="product-3" name="toggle">
             <label for="product-3">Третий</label>
           </form>
           <ul class="slider-list">
@@ -128,7 +122,7 @@
                     Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                     не пропускать занятия и соблюдать диету.
                   </p>
-                  <div class="details-link-wrapper">
+                  <div class="fit-band-details-link-wrapper details-link-wrapper">
                     <a href="#" class="details-link button-regular"><span>Подробнее</span></a>
                   </div>
                   <ul class="fit-band-list-of-description article-slider-list-of-description">
@@ -146,7 +140,6 @@
                   <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
                 </div>
                 <div class="quadrocopter-description article-slider-description">
-
                   <p>
                     Порхает как бабочка,<br>
                     жалит как пчела!
@@ -176,7 +169,7 @@
         <nav class="product-icons-container">
           <ul class="product-icons">
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-1 product-icon">
                   <img src="img/popular-1.png" alt="Виртуальная реальность" width="97" height="55">
                 </div>
@@ -184,7 +177,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-2 product-icon">
                   <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
                 </div>
@@ -192,7 +185,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-3 product-icon">
                   <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
                 </div>
@@ -200,7 +193,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-4 product-icon">
                   <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
                 </div>
@@ -208,7 +201,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-5 product-icon">
                   <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
                 </div>
@@ -216,7 +209,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html">
+              <a href="catalog.html" class="product-icons-link">
                 <div class="product-icon-6 product-icon">
                   <img src="img/poppular-6.png" alt="Квадрокоптеры" width="132" height="69">
                 </div>
@@ -228,9 +221,9 @@
       </main>
     </div>
     <section class="slider-2">
-      <input class="visually-hidden" type="radio" id="delivery" name="switch" checked>
-      <input class="visually-hidden" type="radio" id="guarantee" name="switch">
-      <input class="visually-hidden" type="radio" id="credit" name="switch">
+      <input class="delivery visually-hidden" type="radio" id="delivery" name="switch" checked>
+      <input class="guarantee visually-hidden" type="radio" id="guarantee" name="switch">
+      <input class="credit visually-hidden" type="radio" id="credit" name="switch">
       <div class="main-wrapper main-wrapper-2">
         <div class="slider-controls-2">
           <label for="delivery" class="button-regular-2"><span>Доставка</span></label>
@@ -239,7 +232,7 @@
         </div>
         <h2 class="visually-hidden">Информация о доставке, гарантии, кредите</h2>
         <ul class="slider-list-2">
-          <li class="slider-item slide-2" id="slide4">
+          <li class="slide4 slider-item slide-2" id="slide4">
             <article class="delivery-article article-slider-2">
               <div class="delivery-article-description general-description-style">
                 <p>Доставка</p>
@@ -252,7 +245,7 @@
               <img src="img/delivery.png" alt="Схематическое изображение курьера" width="136" height="164">
             </article>
           </li>
-          <li class="slider-item slide-2" id="slide5">
+          <li class="slide5 slider-item slide-2" id="slide5">
             <article class="guarantee-article article-slider-2">
               <div class="guarantee-article-description general-description-style">
                 <p>Гарантия</p>
@@ -265,7 +258,7 @@
               <img src="img/warranty.png" alt="Схематическое изображение гарантии" width="171" height="194">
             </article>
           </li>
-          <li class="slider-item slide-2" id="slide6">
+          <li class="slide6 slider-item slide-2" id="slide6">
             <article class="credit-article article-slider-2">
               <div class="credit-article-description general-description-style">
                 <p>Кредит</p>
