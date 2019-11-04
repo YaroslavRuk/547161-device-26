@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,21 +15,21 @@
         <div class="container-1">
           <form action="https://echo.htmlacademy.ru" method="get" class="header-search">
             <label for="header-search-input"></label>
-            <input name="search" placeholder="Поиск по сайту" class="header-search-input" id="header-search-input">
-            <button class="search-button"><span>Найти</span></button>
+            <input name="search" placeholder="Поиск по сайту" class="header-search-input" id="header-search-input" aria-label="Поиск по сайту">
+            <button class="search-button" aria-label="Найти"><span>Найти</span></button>
           </form>
           <div class="user-navigation">
             <ul class="user-account-links">
               <li>
-                <a href="#" class="enter">Войти</a>
+                <a href="#" class="enter" aria-label="Войти">Войти</a>
               </li>
             </ul>
             <ul class="compare-basket-links">
               <li>
-                <a href="#" class="compare">Сравнить</a>
+                <a href="#" class="compare" aria-label="Сравнить">Сравнить</a>
               </li>
               <li>
-                <a href="#" class="basket">Корзина</a>
+                <a href="#" class="basket" aria-label="Корзина">Корзина</a>
               </li>
             </ul>
           </div>
@@ -39,15 +38,15 @@
           <nav class="site-navigation">
             <ul class="site-navigation-items">
               <li>
-                <a href="catalog.html" class="catalog-link"><span>Каталог товаров</span></a>
+                <a href="catalog.html" class="catalog-link" aria-label="Каталог товаров"><span>Каталог товаров</span></a>
                 <div class="catalog-link-items-wrapper">
                   <ul class="catalog-link-items">
-                    <li><a href="catalog.html">Виртуальная реальность</a></li>
-                    <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                    <li><a href="catalog.html">Квадрокоптеры</a></li>
-                    <li><a href="catalog.html">Моноподы для селфи</a></li>
-                    <li><a href="catalog.html">Умные часы</a></li>
-                    <li><a href="catalog.html">Экшн-камеры</a></li>
+                    <li><a href="catalog.html" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
+                    <li><a href="catalog.html" aria-label="Фитнес-браслеты">Фитнес-браслеты</a></li>
+                    <li><a href="catalog.html" aria-label="Квадрокоптеры">Квадрокоптеры</a></li>
+                    <li><a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
+                    <li><a href="catalog.html" aria-label="Умные часы">Умные часы</a></li>
+                    <li><a href="catalog.html" aria-label="Экшн-камеры">Экшн-камеры</a></li>
                   </ul>
                 </div>
               </li>
@@ -55,9 +54,9 @@
           </nav>
           <section class="contacts-delivery-information-header">
             <ul>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#" aria-label="Доставка">Доставка</a></li>
+              <li><a href="#" aria-label="Гарантия">Гарантия</a></li>
+              <li><a href="#" aria-label="Контакты">Контакты</a></li>
             </ul>
           </section>
         </div>
@@ -85,11 +84,11 @@
                     как Бен Стиллер!
                   </p>
                   <p>
-                    Самая длинная палка для селфи доступна в нашем магазине.<br>
+                    Самая длинная палка для селфи доступна в нашем магазине.
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                   </p>
-                  <div class="details-link-wrapper">
-                    <a href="#" class="details-link button-regular"><span>Подробнее</span></a>
+                  <div class="stiller-stick-details-link-wrapper details-link-wrapper">
+                    <a href="#" class="details-link button-regular" aria-label="Подробнее о продукте"><span>Подробнее</span></a>
                   </div>
                   <ul class="list-of-description article-slider-list-of-description">
                     <li>
@@ -119,7 +118,7 @@
                     правильно!
                   </p>
                   <p>
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы
                     не пропускать занятия и соблюдать диету.
                   </p>
                   <div class="fit-band-details-link-wrapper details-link-wrapper">
@@ -145,10 +144,10 @@
                     жалит как пчела!
                   </p>
                   <p>
-                    Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен
                     мощным лазером, замаскированным под стандартную камеру.
                   </p>
-                  <div class="details-link-wrapper">
+                  <div class="quadrocopter-details-link-wrapper details-link-wrapper">
                     <a href="#" class="details-link button-regular"><span>Подробнее</span></a>
                   </div>
                   <ul class="quadrocopter-list-of-description article-slider-list-of-description">
@@ -169,23 +168,23 @@
         <nav class="product-icons-container">
           <ul class="product-icons">
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="#" class="product-icons-link" aria-label="Виртуальная реальность">
                 <div class="product-icon-1 product-icon">
                   <img src="img/popular-1.png" alt="Виртуальная реальность" width="97" height="55">
                 </div>
-                <p>Виртуальная<br>реальность</p>
+                <p>Виртуальная реальность</p>
               </a>
             </li>
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="catalog.html" class="product-icons-link" aria-label="Моноподы для селфи">
                 <div class="product-icon-2 product-icon">
                   <img src="img/popular-2.png" alt="Моноподы для селфи" width="86" height="117">
                 </div>
-                <p>Моноподы<br> для селфи</p>
+                <p>Моноподы для селфи</p>
               </a>
             </li>
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="#" class="product-icons-link" aria-label="Экшн-камеры">
                 <div class="product-icon-3 product-icon">
                   <img src="img/popular-3.png" alt="Экшн-камеры" width="71" height="87">
                 </div>
@@ -193,7 +192,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="#" class="product-icons-link" aria-label="Фитнес-браслеты">
                 <div class="product-icon-4 product-icon">
                   <img src="img/popular-4.png" alt="Фитнес-браслеты" width="107" height="65">
                 </div>
@@ -201,7 +200,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="#" class="product-icons-link" aria-label="Умные часы">
                 <div class="product-icon-5 product-icon">
                   <img src="img/popular-5.png" alt="Умные часы" width="56" height="98">
                 </div>
@@ -209,7 +208,7 @@
               </a>
             </li>
             <li>
-              <a href="catalog.html" class="product-icons-link">
+              <a href="#" class="product-icons-link" aria-label="Квадрокоптеры">
                 <div class="product-icon-6 product-icon">
                   <img src="img/poppular-6.png" alt="Квадрокоптеры" width="132" height="69">
                 </div>
@@ -237,8 +236,8 @@
               <div class="delivery-article-description general-description-style">
                 <p>Доставка</p>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему<br>
-                  подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                  Мы с удовольствием доставим ваш товар прямо к вашему
+                  подъезду совершенно бесплатно! Ведь мы неплохо
                   заработаем, поднимая его на ваш этаж.
                 </p>
               </div>
@@ -250,7 +249,7 @@
               <div class="guarantee-article-description general-description-style">
                 <p>Гарантия</p>
                 <p>
-                  Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                  Если из-за возгорания купленного у нас товара у вас сгорит
                   дом — не переживайте, мы выдадим вам новый.<br>
                   Товар, не дом, конечно же.
                 </p>
@@ -263,8 +262,8 @@
               <div class="credit-article-description general-description-style">
                 <p>Кредит</p>
                 <p>
-                  Залезть в долговую яму стало проще! Кредитные<br>
-                  консультанты подберут для вас наиболее выгодные<br>
+                  Залезть в долговую яму стало проще! Кредитные
+                  консультанты подберут для вас наиболее выгодные
                   условия кредита. Выгодные для нашего банка, разумеется.
                 </p>
               </div>
@@ -278,16 +277,16 @@
       <section class="main-content">
         <section class="our-brands">
           <h2 class="visually-hidden">Производители</h2>
-          <a href="#" class="dji">
+          <a href="#" class="dji" aria-label="dji">
             <img src="img/logo-1.jpg" alt="dji" width="260" height="100">
           </a>
-          <a href="#" class="sp-gadgets">
+          <a href="#" class="sp-gadgets" aria-label="sp gadgets">
             <img src="img/logo-2.jpg" alt="sp gadgets" width="260" height="100">
           </a>
-          <a href="#" class="go-pro">
+          <a href="#" class="go-pro" aria-label="go pro">
             <img src="img/logo-3.jpg" alt="go pro" width="260" height="100">
           </a>
-          <a href="#" class="vive">
+          <a href="#" class="vive" aria-label="vive">
             <img src="img/logo-4.jpg" alt="vive" width="260" height="100">
           </a>
         </section>
@@ -295,11 +294,11 @@
           <section class="about-us">
             <h2>О нас</h2>
             <p>
-              Огромный выбор гаджетов не оставит равнодушным гика,<br>
+              Огромный выбор гаджетов не оставит равнодушным гика,
               который есть в каждом из нас.
             </p>
             <p>
-              Мы можем доставить ваш товар в самые отдаленные точки<br>
+              Мы можем доставить ваш товар в самые отдаленные точки
               России! DEVICE работает со многими транспортными компаниями:
             </p>
             <ul class="delivery-companies">
@@ -307,19 +306,19 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#" class="button-regular"><span>Подробнее о нас</span></a>
+            <a href="#" class="button-regular" aria-label="Подробнее о нас"><span>Подробнее о нас</span></a>
           </section>
           <section class="contacts">
             <h2>Контакты</h2>
             <p>
-              Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+              Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
               проверить работоспособность покупки.
               Всякое бывает.
             </p>
             <a href="#" aria-label="Адрес магазина Девайси - город Москва, улица Строителей, дом 15" class="map-index">
               <img src="img/map.png" width="560" height="222" alt="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
             </a>
-            <a href="#" class="button-regular write-us-button"><span>Напишите нам</span></a>
+            <a href="#" class="button-regular write-us-button" aria-label="Напишите нам"><span>Напишите нам</span></a>
           </section>
         </div>
       </section>
@@ -333,15 +332,15 @@
           <div class="user-navigation user-navigation-footer">
             <ul class="user-account-links  user-account-links-footer">
               <li>
-                <a href="#" class="enter-footer"><span>Войти</span></a>
+                <a href="#" class="enter-footer" aria-label="Войти"><span>Войти</span></a>
               </li>
             </ul>
             <ul class="compare-basket-links">
               <li>
-                <a href="#" class="compare compare-footer"><span>Сравнить</span></a>
+                <a href="#" class="compare compare-footer" aria-label="Сравнить"><span>Сравнить</span></a>
               </li>
               <li>
-                <a href="#" class="basket basket-footer"><span>Корзина</span></a>
+                <a href="#" class="basket basket-footer" aria-label="Корзина"><span>Корзина</span></a>
               </li>
             </ul>
           </div>
@@ -349,30 +348,30 @@
         <div class="container-2-footer">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
-            <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+            <p><a href="tel:+74954959595" aria-label="Телефон +74954959595">Тел.: +7 (495) 495-95-95</a></p>
           </div>
         </div>
         <div class="contacts-delivery-information-header contacts-delivery-information-footer">
           <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#" aria-label="Доставка">Доставка</a></li>
+            <li><a href="#" aria-label="Гарантия">Гарантия</a></li>
+            <li><a href="#" aria-label="Контакты">Контакты</a></li>
           </ul>
         </div>
         <div class="container-3-footer">
           <div class="social-network-icon">
-            <a href="#">
-              <img src="img/svg/fb.svg" width="32" height="32" alt="Фейсбук" aria-label="Device в Фейсбук">
+            <a href="#" aria-label="Device в Фейсбук">
+              <img src="img/svg/fb.svg" width="32" height="32" alt="Device в Фейсбук">
             </a>
-            <a href="#">
-              <img src="img/svg/instagram.svg" width="32" height="32" alt="Инстаграм" aria-label="Device в Инстаграм">
+            <a href="#" aria-label="Device в Инстаграм">
+              <img src="img/svg/instagram.svg" width="32" height="32" alt="Device в Инстаграм">
             </a>
-            <a href="#">
-              <img src="img/svg/twitter.svg" width="32" height="32" alt="Твиттер" aria-label="Device в Твиттере">
+            <a href="#" aria-label="Device в Твиттере">
+              <img src="img/svg/twitter.svg" width="32" height="32" alt="Device в Твиттере">
             </a>
           </div>
           <div class="html-academy-icon">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">
               <img src="img/svg/logo-html.svg" width="27" height="35" alt="Логотип академии">
             </a>
           </div>
@@ -383,7 +382,7 @@
           <div>
             <label>
               Ваше имя:
-              <input placeholder="Имя Фамилия" name="user-name">
+              <input placeholder="Имя Фамилия" name="user-name" class="popup-user-name">
             </label>
             <label>
               Ваш e-mail:
@@ -396,17 +395,15 @@
               <textarea placeholder="В свободной форме" name="user-letter"></textarea>
             </label>
           </div>
-          <button type="submit" class="button-send-modal button-regular"><span>Отправить</span></button>
+          <button type="submit" class="button-send-modal button-regular" aria-label="Отправить"><span>Отправить</span></button>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
       </section>
-      <div class="modal modal-map"> <!--visually-hidden-->
+      <div class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947324!2d37.52742931548593!3d55.68703400453056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1571933968187!5m2!1suk!2sua"
-                width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947324!2d37.52742931548593!3d55.68703400453056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDExOTMxMQ!5e0!3m2!1suk!2sua!4v1571933968187!5m2!1suk!2sua" width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
         <p>
-          <img src="img/map-big.jpg" width="960" height="559"
-               alt="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
+          <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина Девайси - город Москва, улица Строителей, дом 15">
         </p>
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </div>

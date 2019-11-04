@@ -1,7 +1,7 @@
 var link = document.querySelector(".write-us-button");
 var popup = document.querySelector(".modal-form");
 var close = document.querySelector(".modal-close");
-var login = popup.querySelector("[name=user-name]");
+var login = popup.querySelector(".popup-user-name");
 var email = popup.querySelector("[name=user-email]");
 var form = popup.querySelector("form");
 
@@ -35,12 +35,23 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function(evt) {
+  if (!login.value) {
+    evt.preventDefault();
+    login.classList.add("error");
+  }
+  if (!email.value) {
+    email.classList.add("error");
+  }
+
   if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
+    login.classList.remove("error");
+    email.classList.remove("error");
+
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
     }
