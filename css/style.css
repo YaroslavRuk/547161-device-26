@@ -567,6 +567,7 @@ a {
 
 .stiller-stick-description {
   margin-right: 80px;
+  margin-left: auto;
 }
 
 .fit-band-description {
@@ -1619,7 +1620,7 @@ a {
   padding: 0;
   margin-top: 68px;
   margin-right: 0;
-  margin-left: 72px;
+  margin-left: 70px;
   list-style: none;
   font-family: "Gilroy ExtraBold", Arial, sans-serif;
   font-size: 18px;
@@ -1910,6 +1911,7 @@ a {
 
 .user-navigation-footer {
   margin-top: 5px;
+  margin-left: auto;
 }
 
 .user-navigation-footer span {
