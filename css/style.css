@@ -1519,6 +1519,10 @@ a {
   transition: height 0.25s ease-in-out;
 }
 
+.sort-and-product {
+  width: 100%;
+}
+
 .sort-bar {
   display: flex;
   justify-content: space-between;
