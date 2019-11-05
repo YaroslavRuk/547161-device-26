@@ -148,12 +148,10 @@
                 <li><a href="#" aria-label="По типу">По типу</a></li>
                 <li><a href="#" aria-label="По популярности">По популярности</a></li>
               </ul>
-              <form class="sort-buttons">
-                <input class="ascending visually-hidden" type="radio" name="switch" value="ascending" id="ascending" aria-label="По восходящей">
-                <label for="ascending"></label>
-                <input class="descending visually-hidden" type="radio" name="switch" value="descending" id="descending" aria-label="По нисходящей" checked>
-                <label for="descending"></label>
-              </form>
+              <div class="sort-links">
+                <a href="#" class="ascending" aria-label="По восходящей"></a>
+                <a href="#" class="descending is-selected" aria-label="По нисходящей"></a>
+              </div>
             </div>
             <ul class="catalog-of-product">
               <li class="catalog-item">
@@ -220,7 +218,7 @@
             <div class="pagination">
               <h2 class="visually-hidden">Страницы товаров</h2>
               <ul class="pagination-items">
-                <li><button type="button" class="pagination-button-back" aria-label="Назад"><span>Назад</span></button></li>
+                <li><a href="#" class="pagination-link-back" aria-label="Назад"><span>Назад</span></a></li>
                 <li>
                   <ul class="pagination-pages">
                     <li class="pagination-first-page"><a href="#" aria-label="Первая страница каталога">1</a></li>
@@ -228,7 +226,7 @@
                     <li><a href="#" aria-label="Третяя страница каталога">3</a></li>
                   </ul>
                 </li>
-                <li><button type="button" class="pagination-button-forward" aria-label="Вперед"><span>Вперед</span></button></li>
+                <li><a href="#" class="pagination-link-forward" aria-label="Вперед"><span>Вперед</span></a></li>
               </ul>
             </div>
           </section>
