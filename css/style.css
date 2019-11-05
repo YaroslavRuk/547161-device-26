@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Gilroy ExtraBold';
   src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-  url('../fonts/Gilroy-ExtraBold.woff');
+  url('../fonts/gilroyextrabold.woff2');
+  url('../fonts/gilroyextrabold.woff');
   font-weight: 800;
   font-style: normal;
 }
@@ -9,7 +10,8 @@
 @font-face {
   font-family: 'Gilroy Light';
   src: local('Gilroy Light'), local('Gilroy-Light'),
-  url('../fonts/Gilroy-Light.woff');
+  url('../fonts/gilroylight.woff2');
+  url('../fonts/gilroylight.woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -28,6 +30,7 @@ body {
   padding: 0;
   font-family: "Open Sans Light", Arial, sans-serif;
   color: #000;
+  min-width: 1200px;
 }
 
 *, *::before, *::after {
@@ -60,6 +63,7 @@ a {
   margin-top: -19px;
   margin-bottom: 28px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .container-1 {
@@ -133,7 +137,7 @@ a {
   background-color: black;
 }
 
-.search-button:active span{
+.search-button:active span {
   opacity: 0.3;
 }
 
@@ -175,6 +179,7 @@ a {
   padding: 0;
   list-style: none;
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 }
 
@@ -212,7 +217,6 @@ a {
 }
 
 .compare {
-  display: inline-block;
   position: relative;
   padding-left: 30px;
 }
@@ -221,7 +225,7 @@ a {
   background-image: url("../img/svg/compare.svg");
   width: 10px;
   height: 10px;
-  bottom: 2px;
+  bottom: 3px;
   left: 10px;
 }
 
@@ -229,12 +233,13 @@ a {
   background-image: url("../img/svg/compare-footer.svg");
   width: 10px;
   height: 10px;
-  bottom: 2px;
-  left: 11px;
+  bottom: 5px;
+  left: 10px;
 }
 
 .basket {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-right: -1px;
   padding-left: 30px;
@@ -350,7 +355,7 @@ a {
   margin-right: 225px;
 }
 
-.contacts-delivery-information-header ul {
+.contacts-delivery-information-header {
   padding: 0;
   margin: 0;
   display: flex;
@@ -362,15 +367,15 @@ a {
   list-style: none;
 }
 
-.contacts-delivery-information-header ul li:nth-child(1){
+.contacts-delivery-information-header li:nth-child(1){
   margin-right: 34px;
 }
 
-.contacts-delivery-information-header ul li:nth-child(2){
+.contacts-delivery-information-header li:nth-child(2){
   margin-right: 109px;
 }
 
-.contacts-delivery-information-header ul li:nth-child(3){
+.contacts-delivery-information-header li:nth-child(3){
   margin-right: -4px;
 }
 
@@ -404,6 +409,7 @@ a {
 
 .user-name {
   display: inline-block;
+  vertical-align: top;
   margin-right: 13px;
   position: relative;
 }
@@ -426,6 +432,7 @@ a {
 
 .user-exit {
   display: inline-block;
+  vertical-align: top;
   opacity: 0.3;
 }
 
@@ -455,6 +462,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 12px;
   height: 12px;
   margin-right: 21px;
@@ -540,16 +548,6 @@ a {
   right: 46px;
 }
 
-.quadrocopter-description div:first-child {
-  color: #fff;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
-  font-size: 179px;
-  letter-spacing: 1.79px;
-  position: absolute;
-  top: -137px;
-  right: 46px;
-}
-
 .stiller-stick-img-container,
 .article-slider-img-container {
   margin-top: -109px;
@@ -602,6 +600,7 @@ a {
 }
 
 .quadrocopter-description > p:first-child {
+  width: 505px;
   font-family: "Gilroy ExtraBold", Arial, sans-serif;
   font-size: 47px;
   line-height: 1.19;
@@ -622,11 +621,11 @@ a {
 
 .stiller-stick-description > p:nth-child(2) {
   width: 481px;
+  margin-bottom: 45px;
 }
 
 .fit-band-description > p:nth-child(2) {
   width: 440px;
-  margin-bottom: 54px;
 }
 
 .quadrocopter-description > p:nth-child(2) {
@@ -634,11 +633,15 @@ a {
 }
 
 .details-link-wrapper {
+  margin-left: 1px;
   margin-bottom: 62px;
 }
 
-.stiller-stick-details-link-wrapper {
+.details-link-stiller-stick {
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 1px;
+  margin-bottom: 53px;
 }
 
 .fit-band-details-link-wrapper {
@@ -685,6 +688,14 @@ a {
 .button-regular::before {
   top: -2px;
   left: 0;
+}
+
+.stiller-stick-description .button-regular::before {
+  top: -3px;
+}
+
+.stiller-stick-description .button-regular::after {
+  bottom: -1px;
 }
 
 .button-regular::after {
@@ -736,6 +747,7 @@ a {
 .product-icons {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -842,7 +854,6 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   background-color: #ffc600;
-  display: inline-block;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -997,12 +1008,12 @@ a {
 .our-brands {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 101px;
 }
 
 .our-brands a {
   position: relative;
-  display: inline-block;
 }
 
 .dji::before,
@@ -1112,6 +1123,7 @@ a {
 
 .about-us a:last-child {
   display: inline-block;
+  vertical-align: middle;
   padding: 9px 22px;
 }
 
@@ -1140,6 +1152,7 @@ a {
 
 .contacts a:nth-child(4) {
   display: inline-block;
+  vertical-align: middle;
   font-family: "Gilroy ExtraBold", Arial, sans-serif;
   font-size: 18px;
   letter-spacing: 3.6px;
@@ -1172,6 +1185,7 @@ a {
 
 .main-heading-catalog-list li {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3);
@@ -1339,7 +1353,6 @@ a {
 }
 
 .price-controls label {
-  display: inline-block;
   font-family: "Gilroy Light", Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.2);
@@ -1431,12 +1444,12 @@ a {
 }
 
 .list-of-colors input:hover + label::before,
-.list-of-colors input + label:hover::before{
+.list-of-colors input + label:hover::before {
   opacity: 0.6;
 }
 
 .list-of-colors input:active + label::before,
-.list-of-colors input + label:active::before{
+.list-of-colors input + label:active::before {
   opacity: 1;
 }
 
@@ -1487,12 +1500,12 @@ a {
 }
 
 .bluetooth-yes-no input:hover + label::before,
-.bluetooth-yes-no input + label:hover::before{
+.bluetooth-yes-no input + label:hover::before {
   opacity: 0.6;
 }
 
 .bluetooth-yes-no input:active + label::before,
-.bluetooth-yes-no input + label:active::before{
+.bluetooth-yes-no input + label:active::before {
   opacity: 1;
 }
 
@@ -1580,6 +1593,7 @@ a {
 
 .sort-links a {
   display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 10px;
   margin-right: 17px;
@@ -1757,12 +1771,6 @@ a {
   opacity: 0.7;
 }
 
-.catalog-of-product p {
-  display: inline-block;
-  margin-top: 36px;
-  margin-left: 12px;
-}
-
 .catalog-of-product li:nth-child(2n) {
   margin-left: 38px;
 }
@@ -1817,6 +1825,7 @@ a {
   padding-bottom: 23px;
   padding-left: 27px;
   display: inline-block;
+  vertical-align: middle;
   opacity: 1;
 }
 
@@ -1827,7 +1836,7 @@ a {
 }
 
 .pagination-link-back:active span,
-.pagination-link-forward:active span{
+.pagination-link-forward:active span {
   opacity: 0.3;
 }
 
@@ -1944,10 +1953,10 @@ a {
 
 .compare-basket-links li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .compare-basket-links li:first-child {
-  display: inline-block;
   margin-right: 28px;
 }
 
@@ -1990,13 +1999,13 @@ a {
   font-size: 15px;
 }
 
-.contacts-delivery-information-footer{
+.contacts-delivery-information-footer {
   margin-top: -31px;
   margin-bottom: 67px;
   margin-left: 368px;
 }
 
-.contacts-delivery-information-footer ul li:nth-child(2){
+.contacts-delivery-information-footer li:nth-child(2) {
   margin-right: 31px;
 }
 
@@ -2010,7 +2019,6 @@ a {
 }
 
 .social-network-icon a {
-  display: inline-block;
   opacity: 0.3;
   margin-right: 19px;
 }
@@ -2023,8 +2031,8 @@ a {
   opacity: 0.1;
 }
 
-.html-academy-icon a {
-  display: inline-block;
+.html-academy-icon {
+  margin-top: -3px;
 }
 
 .html-academy-icon a:hover {
@@ -2160,6 +2168,15 @@ a {
   background-color: #f6dada;
 }
 
+.popup-user-name::-webkit-contacts-auto-fill-button,
+.popup-user-name::-webkit-caps-lock-indicator {
+  visibility: hidden;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
 .error {
   border: none;
   opacity: 1;
@@ -2229,7 +2246,7 @@ a {
   height: 55px;
   background-color: transparent;
   border: 0;
-  background-image: url(../img/svg/modal-close.svg);
+  background-image: url("../img/svg/modal-close.svg");
   cursor: pointer;
   opacity: 0.5;
   outline: none;
