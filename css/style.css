@@ -1330,14 +1330,14 @@ a {
   width: 20px;
   height: 22px;
   padding: 0;
-  background-image: url(../img/svg/filter-button.svg);
+  background-image: url("../img/svg/filter-button.svg");
   cursor: pointer;
 }
 
 .range-controls .toggle:active {
   width: 22px;
   height: 24px;
-  background-image: url(../img/svg/filter-button-big.svg);
+  background-image: url("../img/svg/filter-button-big.svg");
 }
 
 .range-controls .toggle-min {
